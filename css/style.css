@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "monospace" */
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #fff7df;
   overflow-x: hidden;
 }
 
@@ -13,6 +14,11 @@ body {
 .layout_padding2 {
   padding: 75px 0;
 }
+
+.layout_padding3 {
+  padding: 30px 0;
+}
+
 
 .layout_padding2-top {
   padding-top: 75px;
@@ -50,7 +56,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #00bbf0;
+  color: #00204a;
 }
 
 .heading_container p {
@@ -168,7 +174,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
+  color: #8b7bff;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -184,7 +190,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #00bbf0;
+  color: #00204a;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -306,7 +312,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #00bbf0;
+  background-color: #8b7bff;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -321,7 +327,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn2 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #000000;
+  background-color: #8b7bff;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -395,7 +401,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #00bbf0;
+  background-color: #8b7bff;
 }
 
 .service_section {
@@ -414,10 +420,13 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 25px;
   background-color: #f8f8f9;
   padding: 20px;
   border-radius: 5px;
+  min-height: 350px;
+  background: linear-gradient(130deg, #4c3ec3, #b69e9e);
+  color: white;
 }
 
 .service_section .box .img-box {
@@ -454,7 +463,7 @@ a:focus {
 }
 
 .service_section .box .detail-box a:hover {
-  color: #00bbf0;
+  color: #8b7bff;
 }
 
 .service_section .btn-box {
@@ -470,7 +479,7 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #8b7bff;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -517,7 +526,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #8b7bff;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -592,7 +601,7 @@ a:focus {
 .why_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #8b7bff;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -655,7 +664,7 @@ a:focus {
 }
 
 .team_section .team_container .box .detail-box h5 {
-  color: #00bbf0;
+  color: #00204a;
   font-weight: 600;
   position: relative;
 }
@@ -676,7 +685,7 @@ a:focus {
 }
 
 .team_section .team_container .box .social_box a:hover {
-  color: #00bbf0;
+  color: #8b7bff;
 }
 
 /*team section end*/
@@ -764,7 +773,7 @@ a:focus {
 .client_section .owl-carousel .owl-nav .owl-next {
   width: 55px;
   height: 55px;
-  background-color: #ffffff;
+  background-color: #8b7bff;
   color: #000000;
   outline: none;
   bottom: 0px;
@@ -814,7 +823,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #00bbf0;
+  color: #8b7bff;
 }
 
 .info_section .info_social {
@@ -842,7 +851,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #00bbf0;
+  color: #8b7bff;
 }
 
 .info_section .info_links {
@@ -869,7 +878,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-  color: #00bbf0;
+  color: #8b7bff;
 }
 
 .info_section form input {
@@ -903,7 +912,7 @@ a:focus {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #00bbf0;
+  background-color: #8b7bff;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -919,7 +928,7 @@ a:focus {
 /* footer section*/
 .footer_section {
   position: relative;
-  background-color: #ffffff;
+  background-color: #fff7df;
   text-align: center;
 }
 
@@ -933,3 +942,109 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.mt-2 {
+  margin-top: 20px !important;
+}
+
+.mt-3 {
+  margin-top: 30px !important;
+}
+
+
+.mt-5 {
+  margin-top: 50px !important;
+}
+
+.mb-2 {
+  margin-bottom: 20px !important;
+}
+
+.service-class {
+  color: #000;
+  font-weight: bold;
+  
+}
+
+.service-title {
+  /* color: #00204a; */
+    color: #000;
+}
+
+
+.insight_box {
+
+    padding: 25px;
+    /* border-radius: 10px; */
+    margin-top: 20px;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.08); */
+      background: linear-gradient(130deg, #4c3ec3, #b69e9e);
+      color: #fff;
+  }
+
+  .insight_box h3 {
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  .insight_box ul {
+    padding-left: 20px;
+  }
+
+  .insight_box ul li {
+    margin-bottom: 10px;
+  }
+
+  .highlight_text {
+    color: #0a58ca;
+  }
+
+  .closing_text {
+    margin-top: 15px;
+  }
+
+  .t-title {
+  /* color: #00204a; */
+    color: #000;
+    text-transform: capitalize !important;
+}
+
+.goals {
+  text-align: left;
+}
+
+.service_section .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 25px;
+  background-color: #f8f8f9;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 300px;
+  background: linear-gradient(130deg, #4c3ec3, #b69e9e);
+  color: white;
+}
+
+.top-logo{
+  height: 60px;
+}
+
+.d-logo{
+   height: 60px;
+}
+
+.header-subtitle{
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 60px;
+}
