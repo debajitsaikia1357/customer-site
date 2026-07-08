@@ -1,107 +1,160 @@
-@media (max-width: 1300px) {}
+/* ===========================
+   RESPONSIVE — HRGenX Revamp
+   =========================== */
 
-@media (max-width: 1120px) {}
-
-@media (max-width: 992px) {
-  .hero_area {
-    min-height: auto;
-  }
-
-  .hero_area {
-    background: linear-gradient(130deg, #231a6f, #0f054c);
-  }
-
-  .hero_area .hero_bg_box {
-    display: none;
-  }
-
-  .slider_section {
-    padding: 45px 0 75px 0;
-  }
-
-  .custom_nav-container .navbar-nav {
-    padding-top: 15px;
-    align-items: center;
-  }
-
-
-  .custom_nav-container .navbar-nav .nav-item .nav-link {
-    padding: 5px 25px;
-    margin: 5px 0;
-  }
-
-
+/* Large desktops */
+@media (max-width: 1200px) {
+  .hero-img { max-width: 420px; }
+  .hero-img-glow { width: 380px; height: 380px; }
 }
 
-@media (max-width: 768px) {
-  .about_section .img-box {
-    margin-bottom: 45px;
-  }
+/* Tablets landscape */
+@media (max-width: 991px) {
+  /* Nav */
+  .nav-links  { display: none; }
+  .hamburger  { display: flex; }
 
+  /* Hero */
+  .hero-section { padding: 110px 0 72px; min-height: auto; }
+  .hero-section h1 { font-size: 2.4rem; }
+  .hero-lead { font-size: 16px; }
+  .hero-img-col { margin-top: 48px; }
+  .hero-img { max-width: 360px; }
+  .hero-img-glow { width: 300px; height: 300px; }
+  .hero-stats { gap: 24px; }
+  .stat-value { font-size: 24px; }
+
+  /* Sections */
+  .section-pad    { padding: 72px 0; }
+  .section-pad-sm { padding: 52px 0; }
+
+  /* Subpage hero */
+  .subpage-hero { padding: 120px 0 64px; }
+  .subpage-hero h1 { font-size: 2.2rem; }
+
+  /* About img */
+  .about-img-wrap { margin-bottom: 48px; }
+  .about-img-wrap::before { display: none; }
+
+  /* Intel box */
+  .intel-box { padding: 40px 28px; }
+
+  /* Step rows */
+  .step-row { flex-direction: column; gap: 16px; }
+  .step-num { width: 44px; height: 44px; font-size: 18px; }
+
+  /* Footer */
+  .footer-top { padding: 56px 0 40px; }
+  .footer-desc { max-width: 100%; }
 }
 
-@media (max-width: 576px) {
-  .header_section .header_top .contact_nav a span {
-    display: none;
-  }
+/* Tablets portrait */
+@media (max-width: 767px) {
+  /* Hero */
+  .hero-section h1 { font-size: 2rem; }
+  .hero-lead { font-size: 15px; max-width: 100%; }
+  .hero-stats { gap: 20px; flex-wrap: wrap; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions a,
+  .hero-actions button { width: 100%; justify-content: center; }
+  .hero-img { max-width: 280px; }
+  .hero-img-glow { width: 240px; height: 240px; }
 
+  /* Section titles */
+  .section-title { font-size: 1.75rem; }
+  .section-subtitle { font-size: 15px; }
 
-  .client_section .client_container {
-    width: 100%;
-  }
+  /* Cards */
+  .e-card { padding: 28px 20px; }
+  .why-card { padding: 28px 20px; }
+  .service-card { padding: 24px 20px; }
+  .testimonial-card { padding: 28px 22px; }
 
-  .client_section .box {
-    margin: 0;
-  }
+  /* Why step rows on why page */
+  .step-row { padding: 28px 20px; }
 
-  .owl-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-  }
+  /* Intel box */
+  .intel-box { padding: 32px 20px; }
 
-  .client_section .owl-carousel .owl-nav .owl-prev,
-  .client_section .owl-carousel .owl-nav .owl-next {
-    position: unset;
-    margin: 0 2.5px;
-  }
+  /* Mission box */
+  .mission-box { padding: 32px 24px; }
+
+  /* CTA */
+  .cta-section { padding: 72px 0; }
+  .cta-actions { flex-direction: column; align-items: center; }
+  .cta-actions a,
+  .cta-actions button { width: 100%; max-width: 280px; justify-content: center; }
+
+  /* Footer */
+  .footer-top [class*="col-"] { margin-bottom: 36px; }
+  .footer-top [class*="col-"]:last-child { margin-bottom: 0; }
+  .footer-bottom .d-flex { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  /* Subpage hero */
+  .subpage-hero { padding: 110px 0 52px; }
+  .subpage-hero h1 { font-size: 1.9rem; }
+  .subpage-hero .lead { font-size: 16px; }
+
+  /* About page stats row */
+  .stat-tile { margin-bottom: 16px; }
+
+  /* 3E page */
+  .e-block-header { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 
-@media (max-width: 480px) {
-  .slider_section .detail-box h1 {
-    font-size: 2rem;
-  }
+/* Mobile */
+@media (max-width: 575px) {
+  body { font-size: 15px; }
 
-  .track_section form {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  /* Hero */
+  .hero-section h1 { font-size: 1.75rem; }
+  .hero-badge { font-size: 12px; padding: 5px 14px; }
+  .hero-stats { flex-direction: column; gap: 14px; border-top: none; padding-top: 24px; margin-top: 32px; }
+  .stat-value { font-size: 22px; }
+  .hero-img-col { display: none; }  /* hide on very small screens to save space */
 
-  .track_section form input {
-    width: 100%;
-  }
+  /* Nav */
+  .nav-logo { height: 40px; }
 
-  .track_section form button {
-    padding: 10px 60px;
-    margin-top: 10px;
-  }
+  /* Sections */
+  .section-pad    { padding: 56px 0; }
+  .section-pad-sm { padding: 44px 0; }
+  .section-label  { font-size: 11px; }
+
+  /* Cards */
+  .e-icon  { width: 60px; height: 60px; }
+  .e-icon img { width: 34px; height: 34px; }
+  .e-card h3 { font-size: 18px; }
+
+  .why-icon { width: 60px; height: 60px; }
+  .why-icon img { width: 34px; height: 34px; }
+  .why-card h3 { font-size: 17px; }
+
+  .svc-icon { width: 50px; height: 50px; }
+  .svc-icon img { width: 28px; height: 28px; }
+  .service-card h4 { font-size: 16px; }
+
+  /* Testimonial */
+  .t-quote { font-size: 36px; }
+  .t-text  { font-size: 14px; }
+
+  /* Footer */
+  .footer-logo { height: 38px; }
+  .footer-top  { padding: 48px 0 36px; }
+
+  /* About page */
+  .stat-tile .num { font-size: 34px; }
+  .value-num      { font-size: 30px; }
+
+  /* Category header */
+  .category-header { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 
-@media (max-width: 420px) {
-  .service_section .box {
-    flex-direction: column;
-  }
-
-  .service_section .box .img-box {
-    justify-content: flex-start;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 376px) {}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-  }
+/* Extra small */
+@media (max-width: 400px) {
+  .hero-section h1 { font-size: 1.6rem; }
+  .btn-primary-custom,
+  .btn-outline-custom,
+  .btn-white-custom,
+  .btn-ghost-white { padding: 12px 22px; font-size: 14px; }
 }

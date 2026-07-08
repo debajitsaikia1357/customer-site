@@ -1,46 +1,79 @@
-// to get current year
-function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
-}
+/* ===========================
+   HRGenX — custom.js (vanilla JS, no jQuery)
+   =========================== */
 
-getYear();
+document.addEventListener('DOMContentLoaded', function () {
 
+  /* ---- Dynamic year ---- */
+  var yearEl = document.getElementById('displayYear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// client section owl carousel
-$(".client_owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    dots: false,
-    nav: true,
-    navText: [],
-    autoplay: true,
-    autoplayHoverPause: true,
-    navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-    ],
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 2
-        }
+  /* ---- Sticky nav: add .scrolled on scroll ---- */
+  var header = document.querySelector('.site-header');
+  if (header) {
+    function onScroll() {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // run on load
+  }
+
+  /* ---- Hamburger toggle ---- */
+  var hamburger = document.querySelector('.hamburger');
+  var mobileNav = document.querySelector('.mobile-nav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    // close when a link is clicked
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+  }
+
+  /* ---- Active nav link (matches current page filename) ---- */
+  var page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(function (link) {
+    var href = link.getAttribute('href') || '';
+    if (href === page || (page === '' && href === 'index.html')) {
+      link.classList.add('active');
+    }
+  });
+
+  /* ---- Scroll reveal ---- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(function (el) { observer.observe(el); });
+  } else {
+    // fallback: just show everything
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* ---- Smooth close mobile nav on outside click ---- */
+  document.addEventListener('click', function (e) {
+    if (mobileNav && mobileNav.classList.contains('open')) {
+      if (!header.contains(e.target)) {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      }
+    }
+  });
+
 });
-
-
-
-/** google_map js **/
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
