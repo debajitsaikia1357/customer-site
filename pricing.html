@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans & 3E Categories — HRGenX</title>
+  <meta name="description"
+    content="Transparent, predictable pricing across 3 purpose-built categories: Essentials, Enablement, and Enterprise 3E. No hidden setup fees.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ========================
+       HEADER / NAV
+       ======================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="index.html" class="brand-wrap">
+          <img src="images/logo.png" alt="HRGenX" class="nav-logo">
+          <span class="brand-tagline">Intelligence Embedded. HR Elevated.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="service.html">Services</a>
+          <a href="pricing.html" class="active">Pricing</a>
+          <a href="why.html">Why Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#trial-modal" data-bs-toggle="modal" class="nav-cta">Get Started</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="why.html">Why Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="#trial-modal" data-bs-toggle="modal" class="mobile-nav-cta">Get Started</a>
+    </div>
+  </header>
+
+  <!-- ========================
+       HERO / BILLING TOGGLE
+       ======================== -->
+  <section class="pricing-hero">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="hero-badge">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>Transparent &amp; Predictable HCM Pricing</span>
+      </div>
+      <h1>
+        Predictable Investment for <span class="text-gradient">Every Growth Stage</span>
+      </h1>
+      <p class="lead">
+        Choose from our 3 foundational categories — Essentials, Enablement, or Enterprise 3E — built to match your
+        operational maturity and team scale without surprise charges.
+      </p>
+
+      <!-- Interactive Billing Toggle -->
+      <div class="billing-switch-wrapper">
+        <span class="billing-label active" id="label-monthly">Billed Monthly</span>
+        <label class="billing-toggle">
+          <input type="checkbox" id="billingToggle">
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="billing-label" id="label-annual">
+          Billed Annually <span class="save-badge">Save 20% + 2 Mo Free</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       3 PRICING CATEGORIES
+       ======================== -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="row g-4 align-items-stretch justify-content-center">
+
+        <!-- CATEGORY 1: ESSENTIALS -->
+        <div class="col-lg-4 col-md-6">
+          <div class="tier-card">
+            <span class="tier-category-pill pill-c1">
+              <i class="fa-solid fa-layer-group"></i> Category 01: Essentials
+            </span>
+            <div class="tier-header">
+              <div class="tier-icon-wrap">
+                <img src="images/t1.png" alt="Essentials">
+              </div>
+              <div>
+                <h3 class="tier-title">Starter Essentials</h3>
+                <span style="font-size: 13px; color: #64748b; font-weight: 500;">Operational Foundation</span>
+              </div>
+            </div>
+            <p class="tier-tagline">
+              Automate core HR, attendance capture, and statutory payroll with zero paperwork.
+            </p>
+
+            <div class="tier-pricing-wrap">
+              <div class="price-display">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="price-c1">1</span>
+                <span class="price-unit">/ user / mo</span>
+              </div>
+              <div class="price-billing-sub" id="sub-c1">Billed monthly ($1/user/month)</div>
+            </div>
+
+            <div class="tier-audience">
+              <i class="fa-solid fa-users"></i> Recommended for teams up to 100
+            </div>
+
+            <div class="tier-features-list">
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Core HR</strong> &amp; Digital Employee Records</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Attendance &amp; Leave</strong> with Geo-fencing</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Automated Payroll</strong> (PF, ESI, TDS, 401k)</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Employee Self-Service</strong> (iOS &amp; Android Apps)</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Encrypted Vault</strong> for Payslips &amp; Tax Sheets</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Standard Email &amp; Knowledge Base Support</span>
+              </div>
+            </div>
+
+            <a href="#trial-modal" data-bs-toggle="modal" class="btn-tier-cta">
+              Start 14-Day Free Trial
+            </a>
+          </div>
+        </div>
+
+        <!-- CATEGORY 2: ENABLEMENT (FEATURED) -->
+        <div class="col-lg-4 col-md-6">
+          <div class="tier-card featured">
+            <span class="featured-badge">
+              <i class="fa-solid fa-crown me-1"></i> Most Popular Choice
+            </span>
+            <span class="tier-category-pill pill-c2">
+              <i class="fa-solid fa-chart-line"></i> Category 02: Enablement
+            </span>
+            <div class="tier-header">
+              <div class="tier-icon-wrap"
+                style="background: rgba(14, 165, 233, 0.1); border-color: rgba(14, 165, 233, 0.25);">
+                <img src="images/t2.png" alt="Enablement">
+              </div>
+              <div>
+                <h3 class="tier-title">Growth Enablement</h3>
+                <span style="font-size: 13px; color: #0284c7; font-weight: 600;">Capability &amp; Development</span>
+              </div>
+            </div>
+            <p class="tier-tagline">
+              Accelerate team capability with continuous agile OKRs, 360° reviews, and role-based LMS.
+            </p>
+
+            <div class="tier-pricing-wrap" style="background: #fbfaff; border-color: rgba(124, 111, 247, 0.25);">
+              <div class="price-display">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="price-c2">3</span>
+                <span class="price-unit">/ user / mo</span>
+              </div>
+              <div class="price-billing-sub" id="sub-c2">Billed monthly ($3/user/month)</div>
+            </div>
+
+            <div class="tier-audience">
+              <i class="fa-solid fa-users"></i> Perfect for 50 – 500 growing employees
+            </div>
+
+            <div class="tier-features-list">
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Everything in Essentials</strong>, plus:</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Performance Management</strong> &amp; OKR Tracking</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>360° Peer Feedback</strong> &amp; Structured 1-on-1s</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Learning Management (LMS)</strong> &amp; SCORM Courses</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Skill Matrix</strong> &amp; Competency Gap Mapping</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Applicant Tracking (ATS)</strong> &amp; Hiring Pipeline</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Priority 24/5 Live Chat &amp; Ticketing Support</span>
+              </div>
+            </div>
+
+            <a href="#trial-modal" data-bs-toggle="modal" class="btn-tier-cta primary">
+              Start Free Trial Now <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CATEGORY 3: ENTERPRISE 3E -->
+        <div class="col-lg-4 col-md-6">
+          <div class="tier-card">
+            <span class="tier-category-pill pill-c3">
+              <i class="fa-solid fa-gem"></i> Category 03: Total 3E
+            </span>
+            <div class="tier-header">
+              <div class="tier-icon-wrap"
+                style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.25);">
+                <img src="images/t3.png" alt="Engagement">
+              </div>
+              <div>
+                <h3 class="tier-title">Enterprise 3E</h3>
+                <span style="font-size: 13px; color: #059669; font-weight: 600;">Total Workforce Intelligence</span>
+              </div>
+            </div>
+            <p class="tier-tagline">
+              Complete Essentials + Enablement + Engagement for multi-entity scale, wellness, and AI workflows.
+            </p>
+
+            <div class="tier-pricing-wrap">
+              <div class="price-display">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="price-c3">5</span>
+                <span class="price-unit">/ user / mo</span>
+              </div>
+              <div class="price-billing-sub" id="sub-c3">Billed monthly ($5/user/month)</div>
+            </div>
+
+            <div class="tier-audience">
+              <i class="fa-solid fa-users"></i> Built for 500+ &amp; Multi-Entity Orgs
+            </div>
+
+            <div class="tier-features-list">
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Everything in Essentials &amp; Enablement</strong></span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Employee Wellness</strong> &amp; Mental Health EAP</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Pulse Mood AI</strong> &amp; Real-time Culture Heatmaps</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Social Recognition</strong> &amp; Rewards Wallet</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Custom ERP Integrations</strong> (SAP, Oracle, NetSuite)</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Enterprise SSO</strong>, SAML 2.0 &amp; Audit Logs</span>
+              </div>
+              <div class="tier-feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Dedicated CSM &amp; 99.9% Uptime Guarantee</span>
+              </div>
+            </div>
+
+            <a href="#trial-modal" data-bs-toggle="modal" class="btn-tier-cta">
+              Talk to Enterprise Sales
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       INTERACTIVE HEADCOUNT CALCULATOR
+       ======================== -->
+  <section class="pricing-calculator-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="tier-category-pill pill-c1 mb-2">
+          <i class="fa-solid fa-calculator"></i> Interactive Cost Estimator
+        </span>
+        <h2 style="font-size: 36px; font-weight: 800; color: var(--gray-900);">
+          Estimate Your Team's Monthly Investment
+        </h2>
+        <p style="color: var(--gray-500); max-width: 620px; margin: 0 auto;">
+          Slide to match your active workforce size and see immediate projections across all 3 categories with expected
+          administrative savings.
+        </p>
+      </div>
+
+      <div class="calc-card">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <span style="font-weight: 700; font-size: 17px; color: var(--gray-900);">Total Team Size:</span>
+              <span id="sliderValueBadge" style="font-size: 26px; font-weight: 900; color: var(--primary);">75
+                Employees</span>
+            </div>
+
+            <div class="slider-container">
+              <input type="range" min="10" max="1000" step="5" value="75" class="custom-range-slider"
+                id="headcountSlider">
+              <div class="slider-labels">
+                <span>10</span>
+                <span>250</span>
+                <span>500</span>
+                <span>750</span>
+                <span>1,000+</span>
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-3 border d-flex gap-4 align-items-center">
+              <div>
+                <i class="fa-solid fa-clock-rotate-left text-primary fs-3"></i>
+              </div>
+              <div>
+                <div style="font-size: 14px; font-weight: 700; color: var(--gray-900);">Est. HR Hours Saved</div>
+                <div style="font-size: 13px; color: var(--gray-500);"><span id="hoursSaved">45</span>+ hours eliminated
+                  in manual payroll &amp; attendance reconciliation every month.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-4">
+                <div class="calc-result-box">
+                  <div class="calc-result-cat">Essentials</div>
+                  <div class="calc-result-val" id="calc-c1">$75</div>
+                  <div class="calc-result-sub">/ month</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="calc-result-box highlight">
+                  <div class="calc-result-cat" style="color: var(--primary);">Enablement</div>
+                  <div class="calc-result-val" id="calc-c2" style="color: var(--primary);">$225</div>
+                  <div class="calc-result-sub">/ month</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="calc-result-box">
+                  <div class="calc-result-cat">Enterprise</div>
+                  <div class="calc-result-val" id="calc-c3">$375</div>
+                  <div class="calc-result-sub">/ month</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 text-center">
+              <a href="#trial-modal" data-bs-toggle="modal" class="btn-primary-custom">
+                Get Custom Quote for Your Team <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       3-CATEGORY FEATURE MATRIX
+       ======================== -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="font-size: 34px; font-weight: 800; color: var(--gray-900);">
+          Detailed Feature Comparison by Category
+        </h2>
+        <p style="color: var(--gray-500); max-width: 600px; margin: 0 auto;">
+          Comprehensive breakdown of functionality included across the 3 categories.
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>Feature Capability</th>
+              <th>Category 1: Essentials</th>
+              <th class="featured-th">Category 2: Enablement</th>
+              <th>Category 3: Enterprise 3E</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Category 1 Header -->
+            <tr class="matrix-cat-row">
+              <td colspan="4"><i class="fa-solid fa-layer-group me-2"></i> Category 01: Core Operational Foundation</td>
+            </tr>
+            <tr>
+              <td>Centralized Employee Directory &amp; Org Charts</td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Geo-Fenced Mobile &amp; Biometric Attendance</td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Automated Statutory Payroll &amp; Tax Compliance</td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Employee Self-Service Mobile Apps (iOS/Android)</td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Digital Document Vault &amp; E-Signatures</td>
+              <td>Standard</td>
+              <td class="featured-col">Advanced</td>
+              <td>Unlimited Enterprise</td>
+            </tr>
+
+            <!-- Category 2 Header -->
+            <tr class="matrix-cat-row">
+              <td colspan="4"><i class="fa-solid fa-chart-line me-2"></i> Category 02: Talent Enablement &amp;
+                Capability</td>
+            </tr>
+            <tr>
+              <td>Continuous OKRs &amp; Cascading Goal Alignment</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>360° Peer Feedback &amp; 9-Box Calibration Grid</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Learning Management System (LMS) &amp; SCORM</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Skill Matrix &amp; Competency Gap Heatmaps</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Applicant Tracking System (ATS) Pipeline</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-check matrix-check"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+
+            <!-- Category 3 Header -->
+            <tr class="matrix-cat-row">
+              <td colspan="4"><i class="fa-solid fa-gem me-2"></i> Category 03: Engagement &amp; Enterprise Governance
+              </td>
+            </tr>
+            <tr>
+              <td>Employee Wellness &amp; Confidential EAP Counseling</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Pulse Mood AI, Burnout Radar &amp; Sentiment</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Peer Recognition Wall &amp; Rewards Wallet</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Multi-Entity &amp; Global Payroll Integration</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Custom ERP Connectors (SAP, Oracle, NetSuite)</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Enterprise SSO, SAML 2.0 &amp; Audit Trail</td>
+              <td><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td class="featured-col"><i class="fa-solid fa-minus matrix-cross"></i></td>
+              <td><i class="fa-solid fa-check matrix-check"></i></td>
+            </tr>
+            <tr>
+              <td>Dedicated CSM &amp; 99.9% Uptime SLA</td>
+              <td>Standard SLA</td>
+              <td class="featured-col">Priority Support</td>
+              <td>Dedicated CSM + 99.9% SLA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       ENTERPRISE TRUST BAR
+       ======================== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="row g-4 text-center justify-content-center">
+        <div class="col-md-3 col-6">
+          <div class="trust-badge-item justify-content-center">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>SOC2 Type II Certified</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="trust-badge-item justify-content-center">
+            <i class="fa-solid fa-lock"></i>
+            <span>256-Bit Bank-Grade AES</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="trust-badge-item justify-content-center">
+            <i class="fa-solid fa-certificate"></i>
+            <span>ISO 27001 &amp; GDPR Ready</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="trust-badge-item justify-content-center">
+            <i class="fa-solid fa-bolt"></i>
+            <span>99.9% Uptime Commitment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FAQ ACCORDION
+       ======================== -->
+  <section class="pricing-faq-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="font-size: 34px; font-weight: 800; color: var(--gray-900);">
+          Frequently Asked Questions
+        </h2>
+        <p style="color: var(--gray-500); max-width: 600px; margin: 0 auto;">
+          Everything you need to know about categories, billing, and transitioning to HRGenX.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>Can we start with Category 1 (Essentials) and upgrade later?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Yes, absolutely. HRGenX is built on a modular unified data architecture. All employee records, histories,
+              and org configurations carry over seamlessly the moment you activate Enablement or Enterprise 3E.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Are there any hidden setup or implementation fees?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              No hidden fees. Starter Essentials and Enablement tiers include self-guided onboarding templates and
+              automated CSV migration tools at zero additional charge. Tailored white-glove migration for 500+ employee
+              enterprises is scoped transparently upfront.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How does the 14-day free trial work?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              You get complete, unrestricted access to the category of your choice for 14 days. No credit card is
+              required to sign up. You can invite your team, test attendance geo-fencing, and run sandbox payroll
+              dry-runs.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you accommodate multi-state and international payroll rules?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Yes. HRGenX automatically handles state-specific labor laws, provident funds, professional taxes, and
+              multi-currency payouts. Multi-entity global payroll routing is standard on the Enterprise 3E tier.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can we request custom integrations with SAP, Oracle, or NetSuite?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Yes. Our Enterprise 3E tier includes dedicated developer API keys, webhooks, and pre-built bi-directional
+              connectors for major ERPs, financial general ledgers, and identity providers like Okta and Azure AD.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       PRICING CTA
+       ======================== -->
+  <section class="pricing-cta-wrap">
+    <div class="container position-relative" style="z-index: 2;">
+      <h2 style="font-size: 38px; font-weight: 800; margin-bottom: 16px;">
+        Ready to Elevate Your Workforce Operations?
+      </h2>
+      <p style="font-size: 17px; color: #cbd5e1; max-width: 620px; margin: 0 auto 32px;">
+        Join forward-thinking companies running on HRGenX. Deploy in days, not months.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#trial-modal" data-bs-toggle="modal" class="btn-primary-custom" style="padding: 15px 36px;">
+          Start Your Free 14-Day Trial <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="why.html" class="btn-outline-custom" style="padding: 14px 32px;">
+          Why Choose HRGenX
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       MODAL: START TRIAL / DEMO
+       ======================== -->
+  <div class="modal fade" id="trial-modal" tabindex="-1" aria-labelledby="trialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"
+        style="border-radius: 20px; border: none; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.25);">
+        <div class="modal-header" style="background: var(--gradient); color: white; padding: 24px 28px; border: none;">
+          <div>
+            <h5 class="modal-title" id="trialModalLabel" style="font-weight: 800; font-size: 20px;">Experience HRGenX
+              Free</h5>
+            <p style="font-size: 13px; color: rgba(255,255,255,0.85); margin: 0;">14 days free trial. No credit card
+              required.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="padding: 28px;">
+          <form id="pricingDemoForm"
+            onsubmit="event.preventDefault(); alert('Thank you! Our onboarding specialist will contact you within 2 business hours.'); const modal = bootstrap.Modal.getInstance(document.getElementById('trial-modal')); modal.hide();">
+            <div class="mb-3">
+              <label class="form-label" style="font-size: 13.5px; font-weight: 600; color: var(--gray-700);">Full
+                Name</label>
+              <input type="text" class="form-control" required placeholder="Jane Doe"
+                style="border-radius: 10px; padding: 11px 14px;">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" style="font-size: 13.5px; font-weight: 600; color: var(--gray-700);">Work
+                Email</label>
+              <input type="email" class="form-control" required placeholder="jane@company.com"
+                style="border-radius: 10px; padding: 11px 14px;">
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label class="form-label" style="font-size: 13.5px; font-weight: 600; color: var(--gray-700);">Company
+                  Name</label>
+                <input type="text" class="form-control" required placeholder="Acme Inc"
+                  style="border-radius: 10px; padding: 11px 14px;">
+              </div>
+              <div class="col-6">
+                <label class="form-label" style="font-size: 13.5px; font-weight: 600; color: var(--gray-700);">Team
+                  Size</label>
+                <select class="form-select" style="border-radius: 10px; padding: 11px 14px;">
+                  <option>10 - 50</option>
+                  <option selected>51 - 200</option>
+                  <option>201 - 500</option>
+                  <option>500+</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" style="font-size: 13.5px; font-weight: 600; color: var(--gray-700);">Preferred
+                Category</label>
+              <select class="form-select" style="border-radius: 10px; padding: 11px 14px;">
+                <option>Category 01: Starter Essentials ($1/monthly per user)</option>
+                <option selected>Category 02: Growth Enablement ($3/monthly per user - Recommended)</option>
+                <option>Category 03: Enterprise 3E ($5/monthly per user)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-tier-cta primary w-100" style="padding: 13px; font-size: 15px;">
+              Launch 14-Day Free Trial <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================
+       FOOTER
+       ======================== -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <img src="images/logo.png" alt="HRGenX" class="footer-logo">
+            <div class="footer-tagline">Intelligence Embedded. HR Elevated.</div>
+            <p class="footer-desc">
+              End-to-end Human Capital Management across Essentials, Enablement, and Engagement. Built to scale with
+              modern workforces.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Platform</h5>
+            <ul class="footer-links">
+              <li><a href="service.html">All Modules</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="three_es.html">The 3E Framework</a></li>
+              <li><a href="why.html">Why HRGenX</a></li>
+              <li><a href="about.html">About Company</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Core Modules</h5>
+            <ul class="footer-links">
+              <li><a href="core-hr.html">Core HR Management</a></li>
+              <li><a href="payroll.html">Payroll &amp; Tax Engine</a></li>
+              <li><a href="attendance.html">Attendance &amp; Time Tracking</a></li>
+              <li><a href="performance.html">Performance &amp; OKRs</a></li>
+              <li><a href="learning.html">Learning &amp; LMS</a></li>
+              <li><a href="wellness.html">Employee Wellness &amp; EAP</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Contact &amp; Legal</h5>
+            <div class="fc-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Outer Ring Road, Bellandur, Bengaluru, Karnataka 560103</span>
+            </div>
+            <div class="fc-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>sales@hrgenx.com</span>
+            </div>
+            <div class="fc-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 (080) 4123-4567</span>
+            </div>
+            <div class="mt-3">
+              <a href="privacy-policy.html"
+                style="color: #cbd5e1; font-size: 13.5px; text-decoration: none; margin-right: 14px;">Privacy Policy</a>
+              <a href="terms-of-service.html" style="color: #cbd5e1; font-size: 13.5px; text-decoration: none;">Terms of
+                Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-hr">
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <span>&copy; 2026 HRGenX Technologies Inc. All rights reserved. | <a href="privacy-policy.html">Privacy</a>
+          &bull; <a href="terms-of-service.html">Terms</a> &bull; <a href="pricing.html">Pricing</a> &bull; <a
+            href="contact.html">Contact</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    // FAQ Accordion Interactivity
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Billing Toggle Logic
+    const billingToggle = document.getElementById('billingToggle');
+    const labelMonthly = document.getElementById('label-monthly');
+    const labelAnnual = document.getElementById('label-annual');
+
+    const priceC1 = document.getElementById('price-c1');
+    const priceC2 = document.getElementById('price-c2');
+    const priceC3 = document.getElementById('price-c3');
+
+    const subC1 = document.getElementById('sub-c1');
+    const subC2 = document.getElementById('sub-c2');
+    const subC3 = document.getElementById('sub-c3');
+
+    // Calculator Elements
+    const slider = document.getElementById('headcountSlider');
+    const badge = document.getElementById('sliderValueBadge');
+    const hoursSaved = document.getElementById('hoursSaved');
+    const calcC1 = document.getElementById('calc-c1');
+    const calcC2 = document.getElementById('calc-c2');
+    const calcC3 = document.getElementById('calc-c3');
+
+    function updatePricing() {
+      const isAnnual = billingToggle.checked;
+      if (isAnnual) {
+        labelAnnual.classList.add('active');
+        labelMonthly.classList.remove('active');
+        priceC1.textContent = '0.80';
+        priceC2.textContent = '2.40';
+        priceC3.textContent = '4.00';
+        subC1.textContent = 'Billed annually ($9.60/user/year)';
+        subC2.textContent = 'Billed annually ($28.80/user/year)';
+        subC3.textContent = 'Billed annually ($48/user/year)';
+      } else {
+        labelMonthly.classList.add('active');
+        labelAnnual.classList.remove('active');
+        priceC1.textContent = '1';
+        priceC2.textContent = '3';
+        priceC3.textContent = '5';
+        subC1.textContent = 'Billed monthly ($1/user/month)';
+        subC2.textContent = 'Billed monthly ($3/user/month)';
+        subC3.textContent = 'Billed monthly ($5/user/month)';
+      }
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      const count = parseInt(slider.value, 10);
+      badge.textContent = count + ' Employees';
+      hoursSaved.textContent = Math.round(count * 0.6);
+
+      const isAnnual = billingToggle.checked;
+      const rate1 = isAnnual ? 0.8 : 1;
+      const rate2 = isAnnual ? 2.4 : 3;
+      const rate3 = isAnnual ? 4.0 : 5;
+
+      const total1 = Math.round(count * rate1);
+      const total2 = Math.round(count * rate2);
+      const total3 = Math.round(count * rate3);
+
+      calcC1.textContent = '$' + total1.toLocaleString();
+      calcC2.textContent = '$' + total2.toLocaleString();
+      calcC3.textContent = '$' + total3.toLocaleString();
+    }
+
+    billingToggle.addEventListener('change', updatePricing);
+    slider.addEventListener('input', updateCalculator);
+
+    // Initial run
+    updateCalculator();
+  </script>
+</body>
+
+</html>
